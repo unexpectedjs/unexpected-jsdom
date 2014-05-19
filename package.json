@@ -1,0 +1,20 @@
+{
+  "name": "unexpected-jsdom",
+  "version": "0.1.0",
+  "description": "Add jsdom support to unexpected",
+  "main": "lib/unexpectedJsdom.js",
+  "author": "Andreas Lind Petersen <andreas@one.com>",
+  "peerDependencies": {
+    "jsdom": "*"
+  },
+  "dependencies": {
+    "chalk": "=0.4.0"
+  },
+  "devDependencies": {
+    "unexpected": "=3.2.0",
+    "mocha": "=1.19.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
