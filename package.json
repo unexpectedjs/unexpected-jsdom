@@ -7,11 +7,10 @@
   "peerDependencies": {
     "jsdom": "*"
   },
-  "dependencies": {
-    "chalk": "=0.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "unexpected": "=4.0.0",
+    "unexpected-prism": "=0.1.0",
     "mocha": "=1.21.4"
   },
   "scripts": {
