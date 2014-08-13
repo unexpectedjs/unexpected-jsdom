@@ -13,6 +13,9 @@
     "unexpected-prism": "=0.1.0",
     "mocha": "=1.21.4"
   },
+  "peerDependencies": {
+    "unexpected": "4"
+  },
   "scripts": {
     "test": "mocha"
   }
