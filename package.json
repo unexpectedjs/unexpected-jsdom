@@ -1,11 +1,11 @@
 {
   "name": "unexpected-jsdom",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Add jsdom support to unexpected",
   "main": "lib/unexpectedJsdom.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "peerDependencies": {
-    "jsdom": "*"
+    "unexpected": "4"
   },
   "dependencies": {},
   "devDependencies": {
@@ -13,9 +13,6 @@
     "magicpen": "=0.3.4",
     "magicpen-prism": "=0.1.1",
     "mocha": "=1.21.4"
-  },
-  "peerDependencies": {
-    "unexpected": "4"
   },
   "scripts": {
     "test": "mocha"
