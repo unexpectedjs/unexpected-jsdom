@@ -9,8 +9,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "unexpected": "=4.0.0",
-    "unexpected-prism": "=0.1.0",
+    "unexpected": "=4.0.2",
+    "magicpen": "=0.3.4",
+    "magicpen-prism": "=0.1.1",
     "mocha": "=1.21.4"
   },
   "peerDependencies": {

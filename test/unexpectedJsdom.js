@@ -4,7 +4,8 @@ var unexpected = require('unexpected'),
     chalk = require('chalk');
 
 describe('unexpected-jsdom', function () {
-    var expect = unexpected.clone().installPlugin(unexpectedJsdom).installPlugin(require('unexpected-prism'));
+    var expect = unexpected.clone().installPlugin(unexpectedJsdom);
+    expect.output.installPlugin(require('magicpen-prism'));
 
     it('should consider two DOM elements equal when they have the same outerHTML', function () {
         expect(jsdom.jsdom('<div>foobar</div>'), 'to equal', jsdom.jsdom('<div>foobar</div>'));
@@ -17,7 +18,6 @@ describe('unexpected-jsdom', function () {
             expect(jsdom.jsdom(actualHtml), 'to equal', jsdom.jsdom(expectedHtml));
         }, 'to throw exception', function (err) {
             expect(err.output.toString(), 'to equal', 'expected ' + actualHtml + ' to equal ' + expectedHtml);
-            expect(err.output.toString('ansi'), 'to equal', 'expected ' + actualHtml + ' to equal ' + expectedHtml);
         });
     });
 });
