@@ -16,7 +16,7 @@ describe('unexpected-jsdom', function () {
         expect(function () {
             expect(jsdom.jsdom(actualHtml), 'to equal', jsdom.jsdom(expectedHtml));
         }, 'to throw exception', function (err) {
-            expect(chalk.stripColor(err.message), 'to equal', 'expected ' + actualHtml + ' to equal ' + expectedHtml);
+            expect(err.output.toString(), 'to equal', 'expected ' + actualHtml + ' to equal ' + expectedHtml);
         });
     });
 });
