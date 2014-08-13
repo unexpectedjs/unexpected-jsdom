@@ -1,6 +1,6 @@
 {
   "name": "unexpected-jsdom",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Add jsdom support to unexpected",
   "main": "lib/unexpectedJsdom.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
