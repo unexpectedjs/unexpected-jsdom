@@ -1,7 +1,6 @@
 var unexpected = require('unexpected'),
     unexpectedJsdom = require('../lib/unexpectedJsdom'),
-    jsdom = require('jsdom'),
-    chalk = require('chalk');
+    jsdom = require('jsdom');
 
 describe('unexpected-jsdom', function () {
     var expect = unexpected.clone().installPlugin(unexpectedJsdom);
@@ -12,12 +11,14 @@ describe('unexpected-jsdom', function () {
     });
 
     it('should consider two DOM elements different when their outerHTML values differ', function () {
-        var actualHtml = '<!DOCTYPE html><div>foobarbaz</div>',
-            expectedHtml = '<div class="hey">foobarquux</div><!--blahblah-->';
         expect(function () {
-            expect(jsdom.jsdom(actualHtml), 'to equal', jsdom.jsdom(expectedHtml));
+            expect(jsdom.jsdom('<!DOCTYPE html><div>foobarbaz</div>'), 'to equal', jsdom.jsdom('<div class="hey">foobarquux</div><!--blahblah-->'));
         }, 'to throw exception', function (err) {
-            expect(err.output.toString(), 'to equal', 'expected ' + actualHtml + ' to equal ' + expectedHtml);
+            expect(err.output.toString(), 'to equal',
+                'expected <!DOCTYPE html><div>foobarbaz</div> to equal <div class="hey">foobarquux</div><!--blahblah-->\n' +
+                '\n' +
+                '-<!DOCTYPE html><div>foobarbaz</div>\n' +
+                '+<div class="hey">foobarquux</div><!--blahblah-->');
         });
     });
 });

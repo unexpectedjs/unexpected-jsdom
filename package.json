@@ -5,14 +5,17 @@
   "main": "lib/unexpectedJsdom.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "peerDependencies": {
-    "unexpected": "4"
+    "unexpected": ">=5.0.0-beta23"
   },
-  "dependencies": {},
+  "dependencies": {
+    "magicpen": "3.0.7"
+  },
   "devDependencies": {
-    "unexpected": "=4.0.4",
-    "magicpen": "=0.3.4",
-    "magicpen-prism": "=0.1.1",
-    "mocha": "=1.21.4"
+    "jsdom": "0.11.0",
+    "magicpen": "0.3.4",
+    "magicpen-prism": "0.1.1",
+    "mocha": "1.21.4",
+    "unexpected": "5.0.0-beta23"
   },
   "scripts": {
     "test": "mocha"
