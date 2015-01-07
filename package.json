@@ -2,6 +2,7 @@
   "name": "unexpected-jsdom",
   "version": "5.1.0",
   "description": "Add jsdom support to unexpected",
+  "repository": "git://github.com/papandreou/unexpected-jsdom.git",
   "main": "lib/unexpectedJsdom.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "peerDependencies": {
