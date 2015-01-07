@@ -8,9 +8,7 @@
     "unexpected": ">=5.0.0",
     "jsdom": ">= 0.11.0"
   },
-  "dependencies": {
-    "magicpen": "3.0.7"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jsdom": "0.11.0",
     "magicpen": "4.1.0",
