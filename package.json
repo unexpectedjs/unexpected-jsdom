@@ -5,7 +5,8 @@
   "main": "lib/unexpectedJsdom.js",
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "peerDependencies": {
-    "unexpected": ">=5.0.0"
+    "unexpected": ">=5.0.0",
+    "jsdom": ">= 0.11.0"
   },
   "dependencies": {
     "magicpen": "3.0.7"
