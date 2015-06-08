@@ -14,7 +14,7 @@ describe('unexpected-jsdom', function () {
         expect(function () {
             expect(jsdom.jsdom('<!DOCTYPE html><div>foobarbaz</div>'), 'to equal', jsdom.jsdom('<div class="hey">foobarquux</div><!--blahblah-->'));
         }, 'to throw exception', function (err) {
-            expect(err.output.toString(), 'to equal',
+            expect((err.output ? error.output.toString() : err.getErrorMessage().toString()), 'to equal',
                 'expected <!DOCTYPE html><div>foobarbaz</div> to equal <div class="hey">foobarquux</div><!--blahblah-->\n' +
                 '\n' +
                 '-<!DOCTYPE html><div>foobarbaz</div>\n' +
