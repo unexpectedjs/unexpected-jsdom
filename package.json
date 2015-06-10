@@ -8,13 +8,12 @@
     "unexpected": ">=5.0.0",
     "jsdom": ">= 0.11.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "jsdom": "0.11.0",
     "magicpen": "4.1.0",
     "magicpen-prism": "1.0.0",
     "mocha": "1.21.4",
-    "unexpected": "6.0.3"
+    "unexpected": "8.0.0"
   },
   "scripts": {
     "test": "mocha"
