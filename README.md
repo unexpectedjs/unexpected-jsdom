@@ -1,6 +1,10 @@
 unexpected-jsdom
 ================
 
+THIS MODULE IS REPLACED BY [unexpected-dom](https://github.com/Munter/unexpected-dom).
+
+---
+
 Add jsdom support to unexpected. It adds a custom type that recognizes JSDOM elements and documents and syntax highlights it in the terminal using [prism](http://prismjs.com/). Equivalence is determined by comparing `outerHTML`.
 
 To use it:
